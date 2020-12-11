@@ -6,4 +6,9 @@ describe("Gilded Rose", function() {
     const items = gildedRose.updateQuality();
     expect(items[0].name).toBe("fixme");
   });
+  it("should degrade conjured items twice as fast", function() {
+    const gildedRose = new Shop([new Item("Conjured", 10, 20)]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].name).toBe("fixme");
+  });
 });
